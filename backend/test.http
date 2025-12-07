@@ -1,0 +1,21 @@
+GET http://localhost:5000/products/1
+
+###
+POST http://localhost:5000/enquiry/create 
+Content-Type: application/json
+
+{
+    "product_id":2,
+    "name": "Raj",
+    "email": "Raj@example.com",
+    "message": "I want to know more about this product."
+}
+
+####
+POST http://localhost:5000/admin/login
+Content-Type: application/json
+
+{"username":"admin","password":"StrongPass123"}
+
+####
+GET http://localhost:5000/enquiry/get 

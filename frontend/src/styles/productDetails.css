@@ -1,0 +1,186 @@
+.product-details-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.product-details-header {
+  margin-bottom: 12px;
+}
+
+.pd-back {
+  color: #111;
+  text-decoration: none;
+}
+
+.pd-back:hover {
+  text-decoration: underline;
+}
+
+.pd-loading,
+.pd-error,
+.pd-empty {
+  padding: 24px;
+  text-align: center;
+  color: #555;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.pd-media {
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pd-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.pd-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.pd-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+.pd-meta {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #666;
+}
+.pd-category {
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.pd-price {
+  font-weight: 700;
+  color: #111;
+}
+.pd-short {
+  margin: 0;
+  color: #333;
+}
+.pd-desc {
+  line-height: 1.5;
+  color: #444;
+}
+
+.pd-actions {
+  margin-top: 8px;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #111;
+  color: white;
+  border-color: #111;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-box {
+  background: #fff;
+  width: 90%;
+  max-width: 400px;
+  padding: 16px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.enquiry-form label {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.enquiry-form input,
+.enquiry-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.enquiry-form textarea {
+  resize: vertical;
+}
+
+.field-error {
+  color: red;
+  font-size: 0.75rem;
+  margin-top: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.submit-result {
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.submit-result.ok {
+  background: #e6ffe9;
+  color: #0f7a2a;
+}
