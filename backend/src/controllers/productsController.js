@@ -52,7 +52,7 @@ const getProductDetails = async (req, res) => {
   try {
     const idStr = String(req.params.id || "");
 
-    // strict numeric check: only digits allowed
+    // only digits allowed
     if (!/^\d+$/.test(idStr)) {
       return res.status(400).json({ message: "Invalid product ID" });
     }
